@@ -8,8 +8,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class Imagereader {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        File fileObject = new File("C:\\Users\\SURIYA\\Pictures\\Saved Pictures\\" +
-                "flower.jpg");
+        File fileObject = new File("<absolute path to the file>");
         BufferedImage buff = ImageIO.read(fileObject);
         ByteArrayOutputStream byteObject = new ByteArrayOutputStream();
         ImageIO.write(buff,"jpg",byteObject);
